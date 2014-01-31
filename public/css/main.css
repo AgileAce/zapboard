@@ -95,13 +95,18 @@ textarea {
 }
 .panel-header-progress {
     height: 7px;
-    border-width: 1px;
+    border-width: 0px;
     padding: 1px;
-    background: silver;
+    background: #fff;
+    width: 20%;
+    margin-top: 5px;
 }
 .badge-primary {
     background: #008cba;
     color: #fff;
+}
+.panel-title {
+    display: inline-block;
 }
 /* ==========================================================================
    Helper classes
