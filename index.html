@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="public/css/normalize.css">
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="public/css/main.css">
     <script src="public/js/vendor/modernizr.min.js"></script>
 </head>
@@ -27,189 +28,446 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="navbar navbar-default">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="logo-container">
-                <a class="" href="#">
-                    <img src="public/img/zaplogo.png">
-                </a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo-container">
+                    <a class="" href="#">
+                        <img src="public/img/logos/zapgrouplogo.png">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i>&nbsp;dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-road"></i>&nbsp;roadmap</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-qrcode"></i>&nbsp;products
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <div class="product-logo-menu-container">
+                                        <img src="public/img/logos/zapzaplogo.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="product-logo-menu-container">
+                                        <img src="public/img/logos/zapperlogo.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-calendar"></i>&nbsp;planning
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-log-in"></i>&nbsp;sprints</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-new-window"></i>&nbsp;releases</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-road"></i>&nbsp;roadmap</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>&nbsp;admin
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">
+                                <i class="glyphicon glyphicon-user"></i>&nbsp;user admin</li>
+                            <li>
+                                <a href="#">users</a>
+                            </li>
+                            <li>
+                                <a href="#">groups</a>
+                            </li>
+                            <li>
+                                <a href="#">roles</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">
+                                <i class="glyphicon glyphicon-th-large"></i>&nbsp;static data</li>
+                            <li>
+                                <a href="#">product static data</a>
+                            </li>
+                            <li>
+                                <a href="#">general static data</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">
+                                <i class="fa fa-cogs"></i>&nbsp;interfaces</li>
+                            <li>
+                                <a href="#">databases</a>
+                            </li>
+                            <li>
+                                <a href="#">api's</a>
+                            </li>
+                            <li>
+                                <a href="#">links</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav nav-pills navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="notification-container">
+                                <i class="fa fa-envelope fa-lg"></i>
+                                <span class="badge badge-primary animated tada badge-pulse">13</span>
+                            </div>
+                            <b class="caret">&nbsp;</b>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="notification-container animated shake badge-shake">
+                                <i class="fa fa-warning fa-lg"></i>
+                                <span class="badge badge-danger">2</span>
+                            </div>
+                            <b class="caret">&nbsp;</b>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="notification-container">
+                                <i class="fa fa-tasks fa-lg"></i>
+                                <span class="badge badge-primary">6</span>
+                            </div>
+                            <b class="caret">&nbsp;</b>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="public/img/profiles/Cas.jpg" class="profile-pic">
+                            <p class="navbar-text hidden-xs">Cas du Plessis</p>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">profile</a>
+                            </li>
+                            <li>
+                                <a href="#">settings</a>
+                            </li>
+                            <li>
+                                <a href="#">log out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Active</a>
-                </li>
-                <li>
-                    <a href="#">Link</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#">Action</a>
-                        </li>
-                        <li>
-                            <a href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a href="#">Something else here</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li>
-                            <a href="#">Separated link</a>
-                        </li>
-                        <li>
-                            <a href="#">One more separated link</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-                <input type="text" class="form-control col-md-8" placeholder="Search">
-            </form>
-            <ul class="nav navbar-nav navbar-right nav-pills nav-stacked">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-envelope-o"></i>&nbsp;Messages
-                        <span class="badge badge-primary">13</span>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#">Action</a>
-                        </li>
-                        <li>
-                            <a href="#">Another action</a>
-                        </li>
-                        <li>
-                            <a href="#">Something else here</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">Separated link</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.nav-collapse -->
-    </div>
+    </nav>
     <!-- /.navbar -->
 
-    <div class="progress panel-header-progress">
-        <div class="progress-bar progress-bar-success" style="width: 65%">
-            <span class="sr-only">35% Complete (success)</span>
+    <div class="col-md-5">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <span class="product-logo-container">
+                    <img src="public/img/logos/zapzaplogo.png">
+                </span>
+                <h4 class="panel-title">Release 1.1.100</h4>
+            </div>
+            <div class="panel-body">
+                <div class="timeline">
+                    <div>
+                        <div class="relative">
+                            <span class="timeline-bar timeline-bar-full"></span>
+                            <label class="timeline-label">QA Signoff</label>
+                            <span class="date">3 Feb</span>
+                            <span class="circle fa fa-check-circle status-icon status-icon-done"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative highlight-milestone">
+                            <span class="timeline-bar timeline-bar-full"></span>
+                            <label class="timeline-label">Independent Testing Signoff</label>
+                            <span class="date">4 Feb</span>
+                            <span class="circle fa fa-chevron-circle-right status-icon status-icon-inprogress"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <span class="timeline-bar timeline-bar-full"></span>
+                            <label class="timeline-label">UAT Signoff</label>
+                            <span class="date">5 Feb</span>
+                            <span class="circle fa fa-chevron-circle-right status-icon status-icon-inprogress"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <span class="timeline-bar timeline-bar-full"></span>
+                            <label class="timeline-label">Production Testing Signoff</label>
+                            <span class="date">5 Feb</span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative highlight-milestone">
+                            <span class="timeline-bar timeline-bar-left"></span>
+                            <label class="timeline-label">Release</label>
+                            <span class="date-changed">3 Feb</span>
+                            <span class="date">6 Feb</span>
+                            <span class="circle fa fa-exclamation-circle status-icon status-icon-late"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapseTwo">Features</a>
+                                </h1>
+                                <i class="fa fa-chevron-down pull-right"></i>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed table-headless">
+                                        <tbody>
+                                            <tr>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-apple"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-android"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span></span>
+                                                </td>
+                                                <td>KitLocate libray integration</td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-file-text-o"></span>
+                                                </td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-tasks"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-apple"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-android"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-windows"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span>API</span>
+                                                </td>
+                                                <td>Zapio implementaion</td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-file-text-o"></span>
+                                                </td>
+                                                <td class="icon-td">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-apple"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-android"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-windows"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span>API</span>
+                                                </td>
+                                                <td>Zapper ID</td>
+                                                <td class="icon-td">
+                                                </td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-tasks"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span class="fa fa-windows"></span>
+                                                </td>
+                                                <td class="icon-td icon-platform-td">
+                                                    <span></span>
+                                                </td>
+                                                <td>New Scan Screen</td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-file-text-o"></span>
+                                                </td>
+                                                <td class="icon-td">
+                                                    <span class="fa fa-tasks"></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapseThree">Progress Updates</a>
+                                </h1>
+                                <i class="fa fa-chevron-down pull-right"></i>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed table-headless">
+                                        <thead>
+                                            <th align="center">Date</th>
+                                            <th>Update</th>
+                                            <th>By</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="date-td">26 Jan</td>
+                                                <td>QA signed off delayd due to release 1.1.190. Might impact final release date.</td>
+                                                <td align="center">CdP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date-td">26 Jan</td>
+                                                <td>QA signed off delayd due to release 1.1.190. Might impact final release date.</td>
+                                                <td align="center">CdP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="date-td">26 Jan</td>
+                                                <td>QA signed off delayd due to release 1.1.190. Might impact final release date.</td>
+                                                <td align="center">CdP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="progress-bar progress-bar-warning" style="width: 20%">
-            <span class="sr-only">20% Complete (warning)</span>
-        </div>
-        <div class="progress-bar progress-bar-danger" style="width: 15%">
-            <span class="sr-only">10% Complete (danger)</span>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <span class="product-logo-container">
+                    <img src="public/img/logos/zapperlogo.png">
+                </span>
+                <h4 class="panel-title">Release 1.1.130</h4>
+            </div>
+            <div class="panel-body">
+            </div>
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-5">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <div class="glyphicon glyphicon-new-window"></div>
                 <h4 class="panel-title">Zapper - Release 1.1.120</h4>
-                <div class="panel-header-progress pull-right">
-                    <div class="progress-bar progress-bar-success" style="width: 50%">
+                <div class="panel-header-progress progress pull-right">
+                    <div class="progress-bar progress-bar-info progress-bar-animate" data-percentage="90">
                         <span class="sr-only">75% Complete (success)</span>
                     </div>
                 </div>
             </div>
             <div class="panel-body">
-                <div class="panel-group">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Collapsible Group Item #1
-                                </a>
-                            </h1>
-                            <i class="fa fa-chevron-down pull-right"></i>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                Stuff
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="panel panel-primary ">
-            <div class="panel-heading ">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
                 <h4 class="panel-title">Zapper - Release 1.1.120</h4>
-                <div class="panel-header-progress pull-right">
-                    <div class="progress-bar progress-bar-success" style="width: 15%">
+                <div class="panel-header-progress progress pull-right">
+                    <div class="progress-bar progress-bar-success progress-bar-animate" data-percentage="60">
                         <span class="sr-only">75% Complete (success)</span>
                     </div>
                 </div>
             </div>
-            <div class="panel-body ">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Collapsible Group Item #1
-                                </a>
-                            </h1>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                Stuff
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="panel-body">
             </div>
         </div>
-        <div class="panel panel-primary ">
-            <div class="panel-heading ">
-                <h4 class="panel-title">Zapper - Release 1.1.120</h4>
-                <div class="panel-header-progress pull-right">
-                    <div class="progress-bar progress-bar-success" style="width: 85%">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="panel-title">Release 1.1.120</h4>
+                <div class="panel-header-progress progress pull-right">
+                    <div class="progress-bar progress-bar-warning progress-bar-animate" data-percentage="25">
                         <span class="sr-only">75% Complete (success)</span>
                     </div>
                 </div>
             </div>
-            <div class="panel-body ">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h1 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                    Collapsible Group Item #1
-                                </a>
-                            </h1>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                Stuff
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="panel-body">
             </div>
         </div>
     </div>
-
+    <div class="col-md-2">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <h4 class="panel-title">Service Desk</h4>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <h4 class="panel-title">Service Desk</h4>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <h4 class="panel-title">Service Desk</h4>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="glyphicon glyphicon-new-window"></div>
+                <h4 class="panel-title">Service Desk</h4>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
 
     <script src="public/js/vendor/jquery.min.js"></script>
     <script>
