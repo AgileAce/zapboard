@@ -88,25 +88,228 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.logo-container {
-    padding-left: 10px;
+body {
+    padding-top: 50px;
+}
+.logo-container a img {
+    /*padding-left: 10px;
     padding-right: 10px;
-    padding-top: 2px;
+    padding-top: 2px;*/
+    max-height: 35px;
+    margin-top: 5px;
+}
+.product-logo-container img {
+    max-height: 25px;
+}
+.product-logo-menu-container img {
+    max-height: 15px;
 }
 .panel-header-progress {
     height: 7px;
-    border-width: 0px;
     padding: 1px;
-    background: #fff;
+    background: #eff;
     width: 20%;
     margin-top: 5px;
+}
+.badge {
+    font-size: 0.8em;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .badge-primary {
     background: #008cba;
     color: #fff;
 }
+.badge-warning {
+    background: orange;
+    color: #fff;
+}
+.badge-danger {
+    background: red;
+    color: #fff;
+}
+.badge-pulse {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 10;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 10;
+}
+.badge-shake {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
 .panel-title {
     display: inline-block;
+    font-size: 1em;
+}
+.notification-container {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    line-height: 15px;
+    width: 30px;
+}
+.notification-container .badge {
+    position: absolute;
+    top: -7px;
+    right: 0;
+}
+.profile-pic {
+    display: inline;
+    max-height: 30px;
+    border-radius: 50%;
+    margin-top: -8px;
+}
+.navbar-text {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.dropdown-menu {
+    min-width: 90px;
+}
+.table {
+    font-size: 0.9em;
+}
+.icon-td {
+    width: 10px;
+    text-align: center;
+    color: #1163c6;
+    cursor: pointer;
+}
+.icon-platform-td {
+    cursor: default;
+}
+.icon-platform-td span {
+    width: 1px;
+    padding: 0;
+    color: #b3d4fc;
+    font-size: 0.65em;
+    vertical-align: text-top;
+}
+.table-headless tbody tr td {
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+}
+.date-td {
+    width: 50px;
+    text-align: center;
+}
+th {
+    text-align: center;
+}
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+
+.timeline {
+    padding: 5px 0 0 0;
+    /*border-top: 8px solid #eee;*/
+    display: table;
+    border-spacing: 0;
+    text-align: center;
+    margin: 30px auto 10px auto;
+}
+.timeline-bar {
+    position: absolute;
+    height: 7px;
+    background: #eee;
+    width: 80px;
+    margin-top: -13px;
+    display: table-cell;
+}
+.timeline-bar-full {
+    margin-left: 0px;
+}
+.timeline-bar-left {
+    margin-left: 0px;
+    width: 40px;
+}
+.timeline-bar-right {
+    margin-left: 40px;
+    width: 40px;
+}
+.timeline div {
+    display: table-cell;
+}
+.timeline div .relative {
+    position: relative;
+}
+.date {
+    top: -5px;
+    left: 0;
+    right: 0;
+    font-size: 0.7em;
+    line-height: 20px;
+    position: absolute;
+    color: #098fe3;
+}
+.date-changed {
+    top: 5px;
+    left: 0;
+    right: 0;
+    font-size: 0.7em;
+    line-height: 20px;
+    position: absolute;
+    text-decoration: line-through;
+    color: #f00;
+}
+.circle {
+    margin: 0 auto;
+    top: -18px;
+    left: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+.timeline-label {
+    font-size: 0.7em;
+    z-index: 100;
+    cursor: pointer;
+    width: 80px;
+    display: block;
+    top: -40px;
+    position: relative;
+    font-weight: normal;
+}
+.highlight-milestone .timeline-label,
+.highlight-milestone .date,
+.highlight-milestone .date-changed {
+    font-weight: bold;
+    font-style: italic;
+}
+.highlight-milestone .circle {
+    border-color: #aaa;
+}
+.timeline .radio {
+    display: none;
+}
+.status-icon {
+    position: relative;
+}
+.status-icon-done {
+    color: green;
+    background: #fff;
+    position: absolute;
+}
+.status-icon-inprogress {
+    color: blue;
+    background: #fff;
+    position: absolute;
+}
+.status-icon-late {
+    color: red;
+    background: #fff;
+    position: absolute;
 }
 /* ==========================================================================
    Helper classes
