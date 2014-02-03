@@ -88,9 +88,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* -------------------------------------
+ * bootstrap overrides
+ * ------------------------------------- */
+
 body {
     padding-top: 50px;
 }
+th {
+    text-align: center;
+}
+.dropdown-menu {
+    min-width: 90px;
+}
+.table {
+    font-size: 0.9em;
+}
+.navbar-text {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+/* -------------------------------------
+ * general styles
+ * ------------------------------------- */
+
 .logo-container a img {
     /*padding-left: 10px;
     padding-right: 10px;
@@ -118,7 +139,7 @@ body {
     padding-right: 5px;
 }
 .badge-primary {
-    background: #008cba;
+    background: #024d65;
     color: #fff;
 }
 .badge-warning {
@@ -165,16 +186,6 @@ body {
     border-radius: 50%;
     margin-top: -8px;
 }
-.navbar-text {
-    margin-top: 0px;
-    margin-bottom: 0;
-}
-.dropdown-menu {
-    min-width: 90px;
-}
-.table {
-    font-size: 0.9em;
-}
 .icon-td {
     width: 10px;
     text-align: center;
@@ -187,8 +198,8 @@ body {
 .icon-platform-td span {
     width: 1px;
     padding: 0;
-    color: #b3d4fc;
-    font-size: 0.65em;
+    color: #aaa;
+    font-size: 0.75em;
     vertical-align: text-top;
 }
 .table-headless tbody tr td {
@@ -199,25 +210,31 @@ body {
     width: 50px;
     text-align: center;
 }
-th {
-    text-align: center;
+.product-logo {
+    color: #bbb;
+    font-size: 1.1em;
+    display: table;
+    margin-left: 10px;
 }
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
 
+.timeline-container {
+    display: block;
+}
 .timeline {
     padding: 5px 0 0 0;
     /*border-top: 8px solid #eee;*/
     display: table;
     border-spacing: 0;
     text-align: center;
-    margin: 30px auto 10px auto;
+    margin: 25px auto 10px 15px;
 }
 .timeline-bar {
     position: absolute;
     height: 7px;
-    background: #eee;
+    background: #ddd;
     width: 80px;
     margin-top: -13px;
     display: table-cell;
@@ -240,16 +257,16 @@ th {
     position: relative;
 }
 .date {
-    top: -5px;
+    top: -3px;
     left: 0;
     right: 0;
     font-size: 0.7em;
     line-height: 20px;
     position: absolute;
-    color: #098fe3;
+    color: #000;
 }
 .date-changed {
-    top: 5px;
+    top: 6px;
     left: 0;
     right: 0;
     font-size: 0.7em;
@@ -266,20 +283,23 @@ th {
     width: 17px;
     height: 17px;
     background: #fff;
-    border: 2px solid #eee;
+    border: 2px solid #ddd;
     border-radius: 50%;
     display: block;
     position: absolute;
 }
 .timeline-label {
     font-size: 0.7em;
-    z-index: 100;
-    cursor: pointer;
     width: 80px;
-    display: block;
+    display: table-cell;
     top: -40px;
     position: relative;
     font-weight: normal;
+    height: 20px;
+    overflow: hidden;
+    vertical-align: bottom;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 .highlight-milestone .timeline-label,
 .highlight-milestone .date,
@@ -288,7 +308,7 @@ th {
     font-style: italic;
 }
 .highlight-milestone .circle {
-    border-color: #aaa;
+    border-color: #999;
 }
 .timeline .radio {
     display: none;
