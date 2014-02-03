@@ -216,6 +216,48 @@ th {
     display: table;
     margin-left: 10px;
 }
+.widget-blue {
+    background: #27a9e3;
+    color: #fff;
+    border: 0;
+}
+.widget-blue-footer {
+    background: #208dbe;
+    color: #fff;
+    font-size: 0.85em;
+    border: 0;
+    margin: 0;
+    padding: 3px;
+    cursor: pointer;
+}
+.widget-content {
+    display: table;
+}
+.widget-icon {
+    font-size: 3em;
+    display: table-cell;
+    position: relative;
+    vertical-align: top;
+}
+.widget-text {
+    text-align: right;
+    display: table-cell;
+    position: relative;
+}
+.widget-number {
+    font-size: 2em;
+}
+.widget-description {
+    font-size: 0.85em;
+}
+.list-group-item {
+    padding: 2px;
+    border: 0;
+}
+.list-group-item a {
+    color: #1b79eb;
+    font-size: 0.85em;
+}
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
