@@ -262,6 +262,22 @@ th {
  * timeline
  * ------------------------------------- */
 
+.loading-container {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.loading-spinner {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+
 .timeline-container {
     display: block;
 }
