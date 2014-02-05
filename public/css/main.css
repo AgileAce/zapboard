@@ -108,6 +108,11 @@ th {
     margin-top: 0px;
     margin-bottom: 0;
 }
+.label {
+    font-weight: normal;
+    float: right;
+    font-size: 0.8em;
+}
 /* -------------------------------------
  * general styles
  * ------------------------------------- */
@@ -216,12 +221,12 @@ th {
     display: table;
     margin-left: 10px;
 }
-.widget-blue {
+.widget-large-blue {
     background: #27a9e3;
     color: #fff;
     border: 0;
 }
-.widget-blue-footer {
+.widget-large-blue-footer {
     background: #208dbe;
     color: #fff;
     font-size: 0.85em;
@@ -230,25 +235,66 @@ th {
     padding: 3px;
     cursor: pointer;
 }
-.widget-content {
+.widget-large-content {
     display: table;
 }
-.widget-icon {
+.widget-large-icon {
     font-size: 3em;
     display: table-cell;
     position: relative;
     vertical-align: top;
 }
-.widget-text {
+.widget-large-text {
     text-align: right;
     display: table-cell;
     position: relative;
 }
-.widget-number {
+.widget-large-number {
     font-size: 2em;
 }
-.widget-description {
+.widget-large-description {
     font-size: 0.85em;
+}
+.widget-small-grey {
+    background: #ddd;
+    color: #000;
+    border: 0;
+    min-height: 45px;
+    border: 1px solid #ccc;
+}
+.widget-small-grey-footer {
+    background: #bbb;
+    color: #000;
+    font-size: 0.85em;
+    border: 0;
+    margin: 0;
+    padding: 3px;
+    cursor: pointer;
+}
+.widget-small-content {
+    display: table;
+    padding: 4px;
+}
+.widget-small-icon {
+    font-size: 2.5em;
+    display: table-cell;
+    position: absolute;
+    vertical-align: top;
+    color: #fff;
+}
+.widget-small-text {
+    text-align: right;
+    display: table-cell;
+    position: relative;
+    color: #000;
+}
+.widget-small-number {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.widget-small-description {
+    font-size: 0.75em;
+    color: #666;
 }
 .list-group-item {
     padding: 2px;
@@ -259,7 +305,7 @@ th {
     font-size: 0.85em;
 }
 /* -------------------------------------
- * timeline
+ * loading spinner
  * ------------------------------------- */
 
 .loading-container {
@@ -366,7 +412,7 @@ th {
     font-style: italic;
 }
 .highlight-milestone .circle {
-    border-color: #999;
+    border-color: #888;
 }
 .timeline .radio {
     display: none;
