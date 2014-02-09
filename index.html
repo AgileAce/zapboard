@@ -7,582 +7,595 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The ZapBoard</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The ZapBoard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="public/css/normalize.css">
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/css/animate.css">
-    <link rel="stylesheet" href="public/css/main.css">
-    <script src="public/js/vendor/modernizr.min.js"></script>
+  <link rel="stylesheet" href="public/css/normalize.css">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/animate.css">
+  <link rel="stylesheet" href="public/css/semantic.min.css">
+  <link rel="stylesheet" href="public/css/main.css">
+  <script src="public/js/vendor/modernizr.min.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div id="main-logo" class="logo-container">
-                    <a class="" href="#">
-                        <img src="public/img/logos/zapgrouplogo.png">
-                    </a>
-                </div>
-            </div>
-            <div class="navbar-collapse collapse navbar-responsive-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i>&nbsp;dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-road"></i>&nbsp;roadmap</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-qrcode"></i>&nbsp;products
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">
-                                    <div class="product-logo-menu-container">
-                                        <img src="public/img/logos/zapzaplogo.png">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="product-logo-menu-container">
-                                        <img src="public/img/logos/zapperlogo.png">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-calendar"></i>&nbsp;planning
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">
-                                    <i class="glyphicon glyphicon-log-in"></i>&nbsp;sprints</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="glyphicon glyphicon-new-window"></i>&nbsp;releases</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-road"></i>&nbsp;roadmap</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>&nbsp;admin
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">
-                                <i class="glyphicon glyphicon-user"></i>&nbsp;user admin</li>
-                            <li>
-                                <a href="#">users</a>
-                            </li>
-                            <li>
-                                <a href="#">groups</a>
-                            </li>
-                            <li>
-                                <a href="#">roles</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">
-                                <i class="glyphicon glyphicon-th-large"></i>&nbsp;static data</li>
-                            <li>
-                                <a href="#">product static data</a>
-                            </li>
-                            <li>
-                                <a href="#">general static data</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">
-                                <i class="fa fa-cogs"></i>&nbsp;interfaces</li>
-                            <li>
-                                <a href="#">databases</a>
-                            </li>
-                            <li>
-                                <a href="#">api's</a>
-                            </li>
-                            <li>
-                                <a href="#">links</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav nav-pills navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <div class="notification-container">
-                                <i class="fa fa-envelope fa-lg"></i>
-                                <span class="badge badge-primary animated tada badge-pulse">13</span>
-                            </div>
-                            <b class="caret">&nbsp;</b>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <div class="notification-container animated shake badge-shake">
-                                <i class="fa fa-warning fa-lg"></i>
-                                <span class="badge badge-danger">2</span>
-                            </div>
-                            <b class="caret">&nbsp;</b>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <div class="notification-container">
-                                <i class="fa fa-tasks fa-lg"></i>
-                                <span class="badge badge-primary">6</span>
-                            </div>
-                            <b class="caret">&nbsp;</b>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="public/img/profiles/Cas.jpg" class="profile-pic">
-                            <p class="navbar-text hidden-xs">Cas du Plessis</p>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">profile</a>
-                            </li>
-                            <li>
-                                <a href="#">settings</a>
-                            </li>
-                            <li>
-                                <a href="#">log out</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- /.navbar -->
+  <div class="ui small fixed inverted main menu">
+    <a class="active item">
+      <i class="home icon"></i>Home</a>
+    <a class="item">
+      <i class="mail icon"></i>Messages</a>
+    <a class="item">
+      <i class="user icon"></i>Friends</a>
+  </div>
 
-    <div class="col-md-5 col-lg-6">
-        <div id="widget-calendar" class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-calendar"></div>
-                <h4 class="panel-title">Calendar</h4>
-            </div>
-            <div class="panel-body">
-            </div>
+  <!--
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="main-logo" class="logo-container">
+          <a class="" href="#">
+            <img src="public/img/logos/zapgrouplogo.png">
+          </a>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="glyphicon glyphicon-th-list"></div>
-                        <span class="product-logo-container">
-                            <img src="public/img/logos/zapzaplogo.png">
-                        </span>
-                        <h4 class="panel-title">Priority List</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="table-responsive">
-                            <table class="table table-condensed table-headless">
-                                <tbody>
-                                    <tr>
-                                        <td>Ukash Integration
-                                            <span class="label label-success">done</span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-file-text-o"></span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-tasks"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Micro Deposits
-                                            <span class="label label-primary">in sprint</span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-file-text-o"></span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-tasks"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Performance Enhancements
-                                            <span class="label label-default">to do</span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-file-text-o"></span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-tasks"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Casino Integration
-                                            <span class="label label-info">spec in progress</span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-file-text-o"></span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-tasks"></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>NFC Stickers
-                                            <span class="label label-default">to do</span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-file-text-o"></span>
-                                        </td>
-                                        <td class="icon-td">
-                                            <span class="fa fa-tasks"></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="glyphicon glyphicon-th-list"></div>
-                        <span class="product-logo-container">
-                            <img src="public/img/logos/zapperlogo.png">
-                        </span>
-                        <h4 class="panel-title">Priority List</h4>
-                    </div>
-                    <div class="panel-body">
-                        <table class="table table-condensed table-headless">
-                            <tbody>
-                                <tr>
-                                    <td>Kitlocate Integration
-                                        <span class="label label-primary">in sprint</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Split Bill by Item Phase 1
-                                        <span class="label label-primary">in sprint</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Restaurant Pre-Auth
-                                        <span class="label label-default">to do</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Scan to Login
-                                        <span class="label label-info">spec in progress</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Security/Audit Changes
-                                        <span class="label label-primary">in sprint</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>New Flows – Profile
-                                        <span class="label label-success">done</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Inigma Integration
-                                        <span class="label label-default">to do</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Multi Language Settings
-                                        <span class="label label-info">spec in progress</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3D Secure
-                                        <span class="label label-success">done</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Short Payment Descriptor
-                                        <span class="label label-default">to do</span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-file-text-o"></span>
-                                    </td>
-                                    <td class="icon-td">
-                                        <span class="fa fa-tasks"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-5 col-lg-4">
-        <div id="widget-zapzap-release" class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-new-window"></div>
-                <span class="product-logo-container">
+      </div>
+      <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">
+              <i class="fa fa-dashboard"></i>&nbsp;dashboard</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-road"></i>&nbsp;roadmap</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-qrcode"></i>&nbsp;products
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">
+                  <div class="product-logo-menu-container">
                     <img src="public/img/logos/zapzaplogo.png">
-                </span>
-                <h4 class="panel-title">Release 1.1.100</h4>
-            </div>
-            <div class="panel-body">
-            </div>
-        </div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-new-window"></div>
-                <span class="product-logo-container">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="product-logo-menu-container">
                     <img src="public/img/logos/zapperlogo.png">
-                </span>
-                <h4 class="panel-title">Release 1.1.130</h4>
-            </div>
-            <div class="panel-body">
-            </div>
-        </div>
-        <div id="widget-zapzap-sprint" class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-log-in"></div>
-                <span class="product-logo-container">
-                    <img src="public/img/logos/zapzaplogo.png">
-                </span>
-                <h4 class="panel-title">Sprint 34</h4>
-                <div class="panel-header-progress progress pull-right">
-                    <div class="progress-bar progress-bar-success progress-bar-animate" data-percentage="65">
-                        <span class="sr-only">75% Complete (success)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-body">
-            </div>
-        </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-calendar"></i>&nbsp;planning
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">
+                  <i class="glyphicon glyphicon-log-in"></i>&nbsp;sprints</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="glyphicon glyphicon-new-window"></i>&nbsp;releases</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-road"></i>&nbsp;roadmap</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-cog"></i>&nbsp;admin
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">
+                <i class="glyphicon glyphicon-user"></i>&nbsp;user admin</li>
+              <li>
+                <a href="#">users</a>
+              </li>
+              <li>
+                <a href="#">groups</a>
+              </li>
+              <li>
+                <a href="#">roles</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-header">
+                <i class="glyphicon glyphicon-th-large"></i>&nbsp;static data</li>
+              <li>
+                <a href="#">product static data</a>
+              </li>
+              <li>
+                <a href="#">general static data</a>
+              </li>
+              <li class="divider"></li>
+              <li class="dropdown-header">
+                <i class="fa fa-cogs"></i>&nbsp;interfaces</li>
+              <li>
+                <a href="#">databases</a>
+              </li>
+              <li>
+                <a href="#">api's</a>
+              </li>
+              <li>
+                <a href="#">links</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav nav-pills navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="notification-container">
+                <i class="fa fa-envelope fa-lg"></i>
+                <span class="badge badge-primary animated tada badge-pulse">13</span>
+              </div>
+              <b class="caret">&nbsp;</b>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="notification-container animated shake badge-shake">
+                <i class="fa fa-warning fa-lg"></i>
+                <span class="badge badge-danger">2</span>
+              </div>
+              <b class="caret">&nbsp;</b>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <div class="notification-container">
+                <i class="fa fa-tasks fa-lg"></i>
+                <span class="badge badge-primary">6</span>
+              </div>
+              <b class="caret">&nbsp;</b>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="public/img/profiles/Cas.jpg" class="profile-pic">
+              <p class="navbar-text hidden-xs">Cas du Plessis</p>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">profile</a>
+              </li>
+              <li>
+                <a href="#">settings</a>
+              </li>
+              <li>
+                <a href="#">log out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  ->
+  <!-- /.navbar -->
+
+  <div class="col-md-5 col-lg-6">
+    <div id="widget-calendar" class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-calendar"></div>
+        <h4 class="panel-title">Calendar</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
         <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-log-in"></div>
-                <span class="product-logo-container">
-                    <img src="public/img/logos/zapperlogo.png">
-                </span>
-                <h4 class="panel-title">Sprint 30</h4>
-                <div class="panel-header-progress progress pull-right">
-                    <div class="progress-bar progress-bar-info progress-bar-animate" data-percentage="15">
-                        <span class="sr-only">75% Complete (success)</span>
-                    </div>
-                </div>
+          <div class="panel-heading">
+            <div class="glyphicon glyphicon-th-list"></div>
+            <span class="product-logo-container">
+              <img src="public/img/logos/zapzaplogo.png">
+            </span>
+            <h4 class="panel-title">Priority List</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table table-condensed table-headless">
+                <tbody>
+                  <tr>
+                    <td>Ukash Integration
+                      <span class="label label-success">done</span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-file-text-o"></span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-tasks"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Micro Deposits
+                      <span class="label label-primary">in sprint</span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-file-text-o"></span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-tasks"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Performance Enhancements
+                      <span class="label label-default">to do</span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-file-text-o"></span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-tasks"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Casino Integration
+                      <span class="label label-info">spec in progress</span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-file-text-o"></span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-tasks"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>NFC Stickers
+                      <span class="label label-default">to do</span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-file-text-o"></span>
+                    </td>
+                    <td class="icon-td">
+                      <span class="fa fa-tasks"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="panel-body">
-            </div>
+          </div>
         </div>
-    </div>
-
-    <div class="col-md-3 col-lg-1">
-        <div class="panel widget-large-blue">
-            <div class="panel-body widget-large-content">
-                <div class="widget-large-icon fa fa-wrench"></div>
-                <div class="widget-large-text pull-right">
-                    <div class="widget-large-number pull-right">24</div>
-                    <div class="widget-large-description pull-right">Service Desk Issues</div>
-                </div>
-            </div>
-            <div class="panel-footer widget-large-blue-footer">more info
-                <div class="fa fa-arrow-circle-o-right pull-right fa-lg"></div>
-            </div>
-        </div>
-        <div class="panel widget-large-blue">
-            <div class="panel-body widget-large-content">
-                <div class="widget-large-icon fa fa-warning"></div>
-                <div class="widget-large-text pull-right">
-                    <div class="widget-large-number pull-right">1,054</div>
-                    <div class="widget-large-description pull-right">Warnings</div>
-                </div>
-            </div>
-            <div class="panel-footer widget-large-blue-footer">more info
-                <div class="fa fa-arrow-circle-o-right pull-right fa-lg"></div>
-            </div>
-        </div>
-
+      </div>
+      <div class="col-lg-6">
         <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="glyphicon glyphicon-link"></div>
-                <h4 class="panel-title">Quick Links</h4>
-            </div>
-            <div class="panel-body">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="www.google.com">Zapper Priority List</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="www.google.com">ZapZap Priority List</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="www.google.com">Tom's Planner</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="www.google.com">Service Desk</a>
-                    </li>
-                </ul>
-            </div>
+          <div class="panel-heading">
+            <div class="glyphicon glyphicon-th-list"></div>
+            <span class="product-logo-container">
+              <img src="public/img/logos/zapperlogo.png">
+            </span>
+            <h4 class="panel-title">Priority List</h4>
+          </div>
+          <div class="panel-body">
+            <table class="table table-condensed table-headless">
+              <tbody>
+                <tr>
+                  <td>Kitlocate Integration
+                    <span class="label label-primary">in sprint</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Split Bill by Item Phase 1
+                    <span class="label label-primary">in sprint</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Restaurant Pre-Auth
+                    <span class="label label-default">to do</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scan to Login
+                    <span class="label label-info">spec in progress</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Security/Audit Changes
+                    <span class="label label-primary">in sprint</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>New Flows – Profile
+                    <span class="label label-success">done</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Inigma Integration
+                    <span class="label label-default">to do</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Multi Language Settings
+                    <span class="label label-info">spec in progress</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3D Secure
+                    <span class="label label-success">done</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Short Payment Descriptor
+                    <span class="label label-default">to do</span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-file-text-o"></span>
+                  </td>
+                  <td class="icon-td">
+                    <span class="fa fa-tasks"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-5 col-lg-4">
+    <div id="widget-zapzap-release" class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-new-window"></div>
+        <span class="product-logo-container">
+          <img src="public/img/logos/zapzaplogo.png">
+        </span>
+        <h4 class="panel-title">Release 1.1.100</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-new-window"></div>
+        <span class="product-logo-container">
+          <img src="public/img/logos/zapperlogo.png">
+        </span>
+        <h4 class="panel-title">Release 1.1.130</h4>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+    <div id="widget-zapzap-sprint" class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-log-in"></div>
+        <span class="product-logo-container">
+          <img src="public/img/logos/zapzaplogo.png">
+        </span>
+        <h4 class="panel-title">Sprint 34</h4>
+        <div class="panel-header-progress progress pull-right">
+          <div class="progress-bar progress-bar-success progress-bar-animate" data-percentage="65">
+            <span class="sr-only">75% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-log-in"></div>
+        <span class="product-logo-container">
+          <img src="public/img/logos/zapperlogo.png">
+        </span>
+        <h4 class="panel-title">Sprint 30</h4>
+        <div class="panel-header-progress progress pull-right">
+          <div class="progress-bar progress-bar-info progress-bar-animate" data-percentage="15">
+            <span class="sr-only">75% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-lg-1">
+    <div class="panel widget-large-blue">
+      <div class="panel-body widget-large-content">
+        <div class="widget-large-icon fa fa-wrench"></div>
+        <div class="widget-large-text pull-right">
+          <div class="widget-large-number pull-right">24</div>
+          <div class="widget-large-description pull-right">Service Desk Issues</div>
+        </div>
+      </div>
+      <div class="panel-footer widget-large-blue-footer">more info
+        <div class="fa fa-arrow-circle-o-right pull-right fa-lg"></div>
+      </div>
+    </div>
+    <div class="panel widget-large-blue">
+      <div class="panel-body widget-large-content">
+        <div class="widget-large-icon fa fa-warning"></div>
+        <div class="widget-large-text pull-right">
+          <div class="widget-large-number pull-right">1,054</div>
+          <div class="widget-large-description pull-right">Warnings</div>
+        </div>
+      </div>
+      <div class="panel-footer widget-large-blue-footer">more info
+        <div class="fa fa-arrow-circle-o-right pull-right fa-lg"></div>
+      </div>
     </div>
 
-    <div class="col-md-1 col-lg-1">
-        <div class="col-md-10 col-lg-10">
-            <div class="product-logo-container">
-                <img src="public/img/logos/zapzaplogo.png">
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-apple"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">2,074,942</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-android"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">1,329,815</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-windows"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">8,674</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-logo-container">
-                <img src="public/img/logos/zapperlogo.png">
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-apple"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">2,074,942</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-android"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">1,329,815</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel widget-small-grey">
-                <div class="panel-body widget-small-content">
-                    <div class="widget-small-icon fa fa-windows"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">8,674</div>
-                        <div class="widget-small-description pull-right">downloads</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="glyphicon glyphicon-link"></div>
+        <h4 class="panel-title">Quick Links</h4>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="www.google.com">Zapper Priority List</a>
+          </li>
+          <li class="list-group-item">
+            <a href="www.google.com">ZapZap Priority List</a>
+          </li>
+          <li class="list-group-item">
+            <a href="www.google.com">Tom's Planner</a>
+          </li>
+          <li class="list-group-item">
+            <a href="www.google.com">Service Desk</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <script src="public/js/vendor/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="public/js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="public/js/vendor/bootstrap.min.js"></script>
-    <script src="public/js/vendor/vue.min.js"></script>
-    <script src="public/js/plugins.js"></script>
-    <script src="public/js/main.js"></script>
-    <script language="javascript">
-        function loadWidget(widget,url){
+  <div class="col-md-1 col-lg-1">
+    <div class="col-md-10 col-lg-10">
+      <div class="product-logo-container">
+        <img src="public/img/logos/zapzaplogo.png">
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-apple"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">2,074,942</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-android"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">1,329,815</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-windows"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">8,674</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+      <div class="product-logo-container">
+        <img src="public/img/logos/zapperlogo.png">
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-apple"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">2,074,942</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-android"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">1,329,815</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel widget-small-grey">
+        <div class="panel-body widget-small-content">
+          <div class="widget-small-icon fa fa-windows"></div>
+          <div class="widget-small-text pull-right">
+            <div class="widget-small-number pull-right">8,674</div>
+            <div class="widget-small-description pull-right">downloads</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="public/js/vendor/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="public/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="public/js/vendor/bootstrap.min.js"></script>
+  <script src="public/js/vendor/semantic.min.js"></script>
+  <script src="public/js/vendor/vue.min.js"></script>
+  <script src="public/js/plugins.js"></script>
+  <script src="public/js/main.js"></script>
+  <script language="javascript">
+    function loadWidget(widget,url){
             $(widget).fadeOut(500).html("<div class='loading-container'><div class='loading-spinner fa fa-cog fa-spin fa-2x'></div></div>");
             $(widget).fadeOut(100,function(){
                 $(widget).load(url, function(){
@@ -592,7 +605,7 @@
         };
         loadWidget("#widget-zapzap-release .panel-body","/site/widgets/widget-release.html");
         loadWidget("#widget-zapzap-sprint .panel-body","/site/widgets/widget-sprint.html");
-    </script>
+  </script>
 
 </body>
 
