@@ -92,6 +92,7 @@ textarea {
  * bootstrap overrides
  * ------------------------------------- */
 
+/*
 body {
     padding-top: 50px;
 }
@@ -113,6 +114,8 @@ th {
     float: right;
     font-size: 0.8em;
 }
+*/
+
 /* -------------------------------------
  * general styles
  * ------------------------------------- */
@@ -128,7 +131,12 @@ th {
     max-height: 25px;
 }
 .product-logo-menu-container img {
-    max-height: 15px;
+    max-height: 25px;
+}
+.profile-pic {
+    max-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 .panel-header-progress {
     height: 7px;
@@ -177,19 +185,8 @@ th {
     position: relative;
     display: inline-block;
     padding: 0;
-    line-height: 15px;
     width: 30px;
-}
-.notification-container .badge {
-    position: absolute;
-    top: -7px;
-    right: 0;
-}
-.profile-pic {
-    display: inline;
-    max-height: 30px;
-    border-radius: 50%;
-    margin-top: -8px;
+    line-height: 15px;
 }
 .icon-td {
     width: 10px;
