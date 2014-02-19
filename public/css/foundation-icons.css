@@ -1153,9 +1153,20 @@
 .fi-zoom-out:before {
     content: "\f21a";
 }
-/**** CUSTOME STYLES ****/
+/**** CUSTOM STYLES ****/
 
-.fi-large {
-    font-size: 20px;
+.fi-with-text {
+    padding: 3px;
 }
-/**** END CUSTOME STYLE ****/
+.fi-medium {
+    position: relative;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 3px;
+}
+.fi-large {
+    position: relative;
+    font-size: 50px;
+    line-height: 50px;
+}
+/**** END CUSTOM STYLE ****/
