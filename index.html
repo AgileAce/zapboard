@@ -1,4 +1,4 @@
-<!DOCTYPE rhtml>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -20,13 +20,15 @@
     <link rel="stylesheet" href="public/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/animate.css">
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/pace.css">
     <script src="public/js/vendor/modernizr.min.js"></script>
+    <script src="public/js/vendor/pace.min.js"></script>
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -508,90 +510,96 @@
         </div>
     </div>
 
-    <div class="col-sm-12 col-md-1 col-lg-1">
-        <div class="col-md-10 col-lg-10">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-1">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
             <div class="product-logo-container">
                 <img src="public/img/logos/zapzaplogo.png">
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-apple"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">2,074,942</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">2,074,942</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-android"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">1,329,815</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">1,329,815</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-windows"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">8,674</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">8,674</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
             <div class="product-logo-container">
                 <img src="public/img/logos/zapperlogo.png">
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-apple"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">2,074,942</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">2,074,942</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-android"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">1,329,815</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">1,329,815</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
             <div class="panel widget-small-grey">
                 <div class="panel-body widget-small-content">
                     <div class="widget-small-icon fa fa-windows"></div>
-                    <div class="widget-small-text pull-right">
-                        <div class="widget-small-number pull-right">8,674</div>
-                        <div class="widget-small-description pull-right">downloads</div>
+                    <div class="widget-small-text">
+                        <div class="widget-small-number">8,674</div>
+                        <div class="widget-small-description">downloads</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="public/js/vendor/jquery.min.js"></script>
+    <script src="public/js/vendor/jquery.min.js">
+    </script>
     <script>
         window.jQuery || document.write('<script src="public/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="public/js/vendor/bootstrap.min.js"></script>
     <script src="public/js/vendor/vue.min.js"></script>
-    <script src="public/js/plugins.js"></script>
+    <!--<script src="public/js/plugins.js"></script>-->
     <script src="public/js/main.js"></script>
     <script language="javascript">
         function loadWidget(widget,url){
-            $(widget).fadeOut(500).html("<div class='loading-container'><div class='loading-spinner fa fa-cog fa-spin fa-2x'></div></div>");
-            $(widget).fadeOut(100,function(){
+            //$(widget).fadeOut(500).html("<div class='loading-container'><div class='loading-spinner fa fa-cog fa-spin fa-2x'></div></div>");
+            //$(widget).fadeOut(500);
+            $(widget).fadeOut(300,function(){
                 $(widget).load(url, function(){
-                    $(widget).animate({height:"auto"},100).fadeIn(150);
+                    //$(widget).animate({height:"auto"},100).fadeIn(150);
+                    //$(widget).fadeIn(50);
+                    $(widget).show();
                 });
             });
         };
-        loadWidget("#widget-zapzap-release .panel-body","/site/widgets/widget-release.html");
-        loadWidget("#widget-zapzap-sprint .panel-body","/site/widgets/widget-sprint.html");
+        loadWidget("#widget-zapzap-release .panel-body","site/widgets/widget-release.html");
+        loadWidget("#widget-zapzap-sprint .panel-body","site/widgets/widget-sprint.html");
     </script>
 
 </body>

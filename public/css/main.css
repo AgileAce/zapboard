@@ -124,6 +124,9 @@ th {
     max-height: 35px;
     margin-top: 5px;
 }
+.product-logo-container {
+    max-width: 80px;
+}
 .product-logo-container img {
     max-height: 25px;
 }
@@ -261,6 +264,7 @@ th {
     border: 0;
     min-height: 45px;
     border: 1px solid #ccc;
+    width: 80px;
 }
 .widget-small-grey-footer {
     background: #bbb;
@@ -272,29 +276,27 @@ th {
     cursor: pointer;
 }
 .widget-small-content {
-    display: table;
     padding: 4px;
 }
 .widget-small-icon {
     font-size: 2.5em;
-    display: table-cell;
     position: absolute;
     vertical-align: top;
     color: #fff;
 }
 .widget-small-text {
-    text-align: right;
-    display: table-cell;
-    position: relative;
     color: #000;
+    text-align: right;
 }
 .widget-small-number {
     font-size: 1.1em;
     font-weight: bold;
+    position: relative;
 }
 .widget-small-description {
     font-size: 0.75em;
     color: #666;
+    position: relative;
 }
 .list-group-item {
     padding: 2px;
