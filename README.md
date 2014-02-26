@@ -1,3 +1,3 @@
-zapboard [![Coverage Status](https://coveralls.io/repos/AgileAce/zapboard/badge.png)](https://coveralls.io/r/AgileAce/zapboard)
+zapboard [![Build Status](https://travis-ci.org/AgileAce/zapboard.png?branch=master)](https://travis-ci.org/AgileAce/zapboard)[![Coverage Status](https://coveralls.io/repos/AgileAce/zapboard/badge.png)](https://coveralls.io/r/AgileAce/zapboard)
 ========
 Some cool stuff coming soon ...
