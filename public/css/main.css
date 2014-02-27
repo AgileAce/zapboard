@@ -224,10 +224,23 @@ th {
     display: table;
     margin-left: 10px;
 }
+
+/* -------------------------------------
+ * widgets
+ * ------------------------------------- */
+
 .widget-large-blue {
     background: #27a9e3;
-    color: #fff;
     border: 0;
+    min-height: 90px;
+    width: 140px;
+}
+.widget-small-grey {
+    background: #ddd;
+    border: 0;
+    min-height: 45px;
+    border: 1px solid #ccc;
+    width: 80px;
 }
 .widget-large-blue-footer {
     background: #208dbe;
@@ -239,44 +252,17 @@ th {
     cursor: pointer;
 }
 .widget-large-content {
-    display: table;
-}
-.widget-large-icon {
-    font-size: 3em;
-    display: table-cell;
-    position: relative;
-    vertical-align: top;
-}
-.widget-large-text {
-    text-align: right;
-    display: table-cell;
-    position: relative;
-}
-.widget-large-number {
-    font-size: 2em;
-}
-.widget-large-description {
-    font-size: 0.85em;
-}
-.widget-small-grey {
-    background: #ddd;
-    color: #000;
-    border: 0;
-    min-height: 45px;
-    border: 1px solid #ccc;
-    width: 80px;
-}
-.widget-small-grey-footer {
-    background: #bbb;
-    color: #000;
-    font-size: 0.85em;
-    border: 0;
-    margin: 0;
-    padding: 3px;
-    cursor: pointer;
+    /*display: table;*/
+    padding: 4px;
 }
 .widget-small-content {
     padding: 4px;
+}
+.widget-large-icon {
+    font-size: 3em;
+    position: absolute;
+    vertical-align: top;
+    color: #fff;
 }
 .widget-small-icon {
     font-size: 2.5em;
@@ -284,13 +270,25 @@ th {
     vertical-align: top;
     color: #fff;
 }
+.widget-large-text {
+    color: #fff;
+    text-align: right;
+}
 .widget-small-text {
     color: #000;
     text-align: right;
 }
+.widget-large-number {
+    font-size: 2em;
+    position: relative;
+}
 .widget-small-number {
     font-size: 1.1em;
     font-weight: bold;
+    position: relative;
+}
+.widget-large-description {
+    font-size: 0.85em;
     position: relative;
 }
 .widget-small-description {
@@ -298,6 +296,10 @@ th {
     color: #666;
     position: relative;
 }
+
+
+
+
 .list-group-item {
     padding: 2px;
     border: 0;

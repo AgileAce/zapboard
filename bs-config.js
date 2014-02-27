@@ -18,7 +18,7 @@ module.exports = {
      |--------------------------------------------------------------------------
      | https://github.com/shakyShane/browser-sync/wiki/options#wiki-files
      */
-    files: ["*.html"],
+    files: ["*.html","public/css/*.css","public/js/*.js"],
 
     /*
      |--------------------------------------------------------------------------
@@ -130,7 +130,7 @@ module.exports = {
      |--------------------------------------------------------------------------
      | https://github.com/shakyShane/browser-sync/wiki/options#wiki-host
      */
-    host: "192.168.5.14",
+    host: false,
 
     /*
      |--------------------------------------------------------------------------
